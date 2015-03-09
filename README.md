@@ -1,4 +1,4 @@
-![get-grape-juiced](https://cloud.githubusercontent.com/assets/80123/6564315/a20b1dcc-c675-11e4-9d47-e2ed3bb875ae.png)
+![get-grape-juiced](https://cloud.githubusercontent.com/assets/80123/6564380/07b3b404-c676-11e4-808b-fed1dfea7eab.png)
 
 Rpsec matchers for grape-entity.
 
