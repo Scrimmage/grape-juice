@@ -19,6 +19,7 @@ module GrapeJuice
           as_correct? &&
           if_conditions_correct? &&
           unless_conditions_correct? &&
+          using_correct? &&
           format_correct? &&
           safe_correct?
       end
@@ -126,6 +127,17 @@ module GrapeJuice
 
         if exposure[:unless] != @unless_conditions
           @failure_message = "Expected unless condition #{@unless_conditions}, got #{exposure[:unless] || 'nil'}"
+          false
+        else
+          true
+        end
+      end
+
+      def using_correct?
+        return true if @using_entity.nil?
+
+        if exposure[:using] != @using_entity
+          @failure_message = "Expected to use #{@using_entity} for exposure, but got #{exposure[:using] || 'nil'}"
           false
         else
           true
