@@ -1,6 +1,6 @@
 # Grape::Juice
 
-TODO: Write a gem description
+Rpsec matchers for grape-entity.
 
 ## Installation
 
